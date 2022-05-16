@@ -14,9 +14,9 @@ from scipy.signal import savgol_filter
 import argparse
 
 parser = argparse.ArgumentParser(description='fit_headpose_setting')
-parser.add_argument('--csv_path', type=str, default='/content/FACIAL/video_preprocess/train1_openface/train1_512_audio.csv')
-parser.add_argument('--deepface_path', type=str, default='/content/FACIAL/video_preprocess/train1_deep3Dface/train1.npz')
-parser.add_argument('--save_path', type=str, default='/content/FACIAL/video_preprocess/train1_posenew.npz')
+parser.add_argument('--csv_path', type=str, default='../video_preprocess/train1_openface/train1_512_audio.csv')
+parser.add_argument('--deepface_path', type=str, default='../video_preprocess/train1_deep3Dface/train1.npz')
+parser.add_argument('--save_path', type=str, default='../video_preprocess/train1_posenew.npz')
 opt = parser.parse_args()
 
 
